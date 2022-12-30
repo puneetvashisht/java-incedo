@@ -2,15 +2,19 @@ package com.indeco.oops;
 
 public class Car extends Vehicle {
 
-//	public Car() {
+	public Car() {
 //		super();
-//	}
+		this("Tata");
+		
+	}
 	String brand;
 
 	public Car(String brand) {
 		super();
 		this.brand = brand;
+		
 	}
+
 	
 	
 

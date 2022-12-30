@@ -1,10 +1,21 @@
 package com.indeco.oops;
 
-class Employee {
+class Employee  {
 	// Member variables
 	int id;
 	String name;
 	private double salary;
+	Address address;
+	
+	static final String COMPANY_NAME = "Incedo";
+	
+	static String getCompanyName() {
+//		COMPANY_NAME = "xyz";
+		return COMPANY_NAME;
+	}
+	
+	
+	
 	
 	//constructor (initialize mandatory fields)
 	public Employee(int id, String name) {
@@ -12,6 +23,18 @@ class Employee {
 		this.name = name;
 	}
 	
+	
+	
+	public Employee(int id, String name, double salary, Address address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		this.address = address;
+	}
+
+
+
 	public Employee() {
 		super();
 	}
@@ -35,11 +58,15 @@ class Employee {
 	}
 
 
-	// string representation of object
+
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", address=" + address + "]";
 	}
+
+
+	// string representation of object
+	
 	
 	
 	

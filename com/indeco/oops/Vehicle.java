@@ -8,7 +8,7 @@ public class Vehicle extends Object{
 	double price;
 	
 	public Vehicle() {
-		
+//		this.speed = 41;
 	}
 	
 	public Vehicle(int speed, int maxSpeed, String color, double price) {
