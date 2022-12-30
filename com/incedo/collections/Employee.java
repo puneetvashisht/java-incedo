@@ -1,5 +1,7 @@
 package com.incedo.collections;
 
+import java.util.Objects;
+
 public class Employee {
 	// Member variables
 	int id;
@@ -36,13 +38,22 @@ public class Employee {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-//	        return (this == obj);
-		Employee e1 = (Employee) obj;
-		if (e1.id == this.id) {
-			return true;
-		}
-		return false;
+	public int hashCode() {
+		return Objects.hash(name);
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return Objects.equals(name, other.name);
+	}
+	
+	
 
 }
