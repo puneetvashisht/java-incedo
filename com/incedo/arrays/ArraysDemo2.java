@@ -6,6 +6,8 @@ public class ArraysDemo2 {
 	
 	public static void main(String[] args) {
 //		Employee employees[] = new Employee[2];
+		
+//		int arr [][] = new int[3][];
 				
 		Employee e1 = new Employee(1 ,"Ravi");
 		Employee e2 = new Employee(2, "Priya", 34343);

@@ -1,5 +1,7 @@
 package com.indeco.oops;
 
+import com.incedo.exceptions.InvalidInputException;
+
 public class MountainBicycle extends Bicycle {
 	
 	int gears;
@@ -15,7 +17,7 @@ public class MountainBicycle extends Bicycle {
 	}
 
 	@Override
-	public void speedUp() {
+	public void speedUp() throws InvalidInputException {
 		this.speed+=1;
 
 	}

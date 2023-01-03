@@ -2,6 +2,8 @@ package com.indeco.oops;
 
 import java.util.ArrayList;
 
+import com.incedo.exceptions.InvalidInputException;
+
 public class RaceTest {
 
 	public static void main(String[] args) {
@@ -21,7 +23,12 @@ public class RaceTest {
 		
 		for(IBycycle b : bicycles) {
 			System.out.println(b);
-			b.speedUp();
+			try {
+				b.speedUp();
+			} catch (InvalidInputException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 //			b.peddle();
 			System.out.println(b);
 		}

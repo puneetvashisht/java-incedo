@@ -29,6 +29,10 @@ public class ArrayListDemo2 {
 //		Collections.sort(employees);
 //		Arrays.
 		
+		
+		Employee e4 = e3;
+		System.out.println(e3 == e3);
+		
 		employees.add(e1);
 		employees.add(e2);
 //		employees.add(e3);
